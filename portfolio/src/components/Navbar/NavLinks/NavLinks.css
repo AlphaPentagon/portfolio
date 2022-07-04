@@ -1,0 +1,8 @@
+.navlink-li {
+    list-style: none;
+}
+
+.navlink-li > a {
+    text-decoration: none;
+    color: var(--main-text-colour);
+}

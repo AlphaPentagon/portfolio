@@ -1,0 +1,9 @@
+.navicon-li {
+    list-style: none;
+}
+
+.navicon-li > a {
+    text-decoration: none;
+    color: var(--main-text-colour);
+}
+

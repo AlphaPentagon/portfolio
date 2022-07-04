@@ -1,0 +1,8 @@
+.footerTextContainer {
+    padding-bottom: 3rem;
+}
+
+.footerTextContainer > p {
+    text-align: center;
+    line-height: 1.4rem;
+}
