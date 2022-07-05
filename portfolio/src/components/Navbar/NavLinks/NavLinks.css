@@ -5,4 +5,10 @@
 .navlink-li > a {
     text-decoration: none;
     color: var(--main-text-colour);
+    font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+}
+
+.homeLink {
+    background-color: var(--alt-colour-1);
+    color: var(--secondary-colour);
 }

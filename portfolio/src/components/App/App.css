@@ -5,3 +5,9 @@
   width: 90%;      
 }
 
+footer {
+  background-color: var(--alt-colour-1);
+  color: var(--secondary-text-colour);
+  width: 100%;
+}
+

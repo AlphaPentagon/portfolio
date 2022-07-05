@@ -1,3 +1,7 @@
 .title-container {
     padding-top: 2rem;
 }
+
+.title-container > h1 {
+    font-size: clamp(2.8rem, 10vw + 1rem, 6rem );
+}

@@ -28,7 +28,7 @@
     width: 100vw;
     background-image: linear-gradient(var(--secondary-colour), var(--primary-colour), var(--primary-colour));
     color: var(--main-text-colour);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   #root {
