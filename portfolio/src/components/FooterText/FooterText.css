@@ -1,16 +1,15 @@
 .footerTextContainer {
-    padding-block: 3rem;
-    padding-inline: 1rem;
-    max-width: 90%;
-    
+  padding-block: 3rem;
+  padding-inline: clamp();
 }
 
 .footerTextContainer > p {
-    text-align: center;
-    line-height: 1.4rem;
-    font-size: clamp(0.9rem, 4vw, 1.2em);
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: clamp(0.9rem, 4vw, 1.2em);
 }
 
 .footerTextContainer > p > strong {
-    font-size: clamp(1rem, 4vw, 1.2em);
+  font-size: clamp(1rem, 4vw, 1.2em);
+  font-weight: 700;
 }

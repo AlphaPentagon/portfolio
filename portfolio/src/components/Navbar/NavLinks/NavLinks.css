@@ -12,3 +12,11 @@
     background-color: var(--alt-colour-1);
     color: var(--secondary-colour);
 }
+
+/* Breakpoint for non-mobile view*/
+
+@media only screen and (min-width: 400px) {
+    .navlink-li {
+        padding-right: 1.5em;
+    }
+}
