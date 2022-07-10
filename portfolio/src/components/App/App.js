@@ -1,19 +1,19 @@
 import "./App.css";
-import Navbar from "../Navbar/Navbar";
-import Title from "../Title/Title";
-import FooterText from "../FooterText/FooterText";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "../../pages/Home.js";
+import { About } from "../../pages/About.js";
+import { Projects } from "../../pages/Projects.js";
+import { Layout } from "../../pages/Layout.js";
 
 function App() {
   return (
-    <>      
-      <Navbar className="navbar-container" />
-      <main>
-        <Title />
-      </main>
-      <footer>
-        <FooterText />
-      </footer>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+      </Route>
+    </Routes>
   );
 }
 

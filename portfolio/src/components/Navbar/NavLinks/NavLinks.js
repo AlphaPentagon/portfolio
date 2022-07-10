@@ -1,9 +1,12 @@
 import "./NavLinks.css";
+import { Link } from "react-router-dom";
 
 function NavLinks({ link, text, className }) {
   return (
     <li className="navlink-li">
-      <a href={link}>{text}</a>
+      <Link to={link} className={className}>
+        {text}
+      </Link>
     </li>
   );
 }

@@ -1,22 +1,29 @@
 .navlink-li {
-    list-style: none;
+  list-style: none;
 }
 
 .navlink-li > a {
-    text-decoration: none;
-    color: var(--main-text-colour);
-    font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+  text-decoration: none;
+  color: var(--main-text-colour);
+  font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
 }
 
-.homeLink {
-    background-color: var(--alt-colour-1);
-    color: var(--secondary-colour);
+.navlink-li:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+.homeLink:active,
+.projectLink:active,
+.aboutLink:active {
+  background-color: white;
+  color: var(--secondary-colour);
 }
 
 /* Breakpoint for non-mobile view*/
 
 @media only screen and (min-width: 400px) {
-    .navlink-li {
-        padding-right: 1.5em;
-    }
+  .navlink-li {
+    padding-right: 1.5em;
+  }
 }
