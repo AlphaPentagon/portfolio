@@ -2,13 +2,13 @@ import "./Navbar.css";
 import NavLinks from "./NavLinks/NavLinks.js";
 import NavIcons from "./NavIcons/NavIcons.js";
 
-function Navbar() {
+function Navbar({ changePage }) {
   return (
     <nav>
       <ul className="navbar-left-container">
-        <NavLinks link="/" text="HOME"></NavLinks>
-        <NavLinks link="/projects" text="PROJECTS" />
-        <NavLinks link="/about" text="ABOUT" />
+        <NavLinks link="/" text="HOME" changePage={changePage}></NavLinks>
+        <NavLinks link="/projects" text="PROJECTS" changePage={changePage} />
+        <NavLinks link="/about" text="ABOUT" changePage={changePage} />
       </ul>
       <ul className="navbar-right-container">
         <NavIcons

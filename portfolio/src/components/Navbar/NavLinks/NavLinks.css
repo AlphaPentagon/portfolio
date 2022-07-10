@@ -6,10 +6,12 @@
   text-decoration: none;
   color: var(--main-text-colour);
   font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+  padding-block: 0.1rem;
+  padding-inline: 0.4rem;
 }
 
 .navlink-li:hover {
-  transform: scale(110%);
+  transform: scale(105%);
   cursor: pointer;
 }
 
@@ -18,7 +20,8 @@
   color: var(--secondary-colour);
   text-decoration: none;
   font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
-  padding: 0.2rem;
+  padding-block: 0.1rem;
+  padding-inline: 0.4rem;
   border-radius: 0.3rem;
 }
 
