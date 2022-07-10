@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <nav>
       <ul className="navbar-left-container">
-        <NavLinks link="/" text="HOME" className="homeLink"></NavLinks>
-        <NavLinks link="/projects" text="PROJECTS" className="projectLink" />
-        <NavLinks link="/about" text="ABOUT" className="aboutLink" />
+        <NavLinks link="/" text="HOME"></NavLinks>
+        <NavLinks link="/projects" text="PROJECTS" />
+        <NavLinks link="/about" text="ABOUT" />
       </ul>
       <ul className="navbar-right-container">
         <NavIcons

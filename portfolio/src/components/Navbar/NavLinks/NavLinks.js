@@ -1,12 +1,15 @@
 import "./NavLinks.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function NavLinks({ link, text, className }) {
+function NavLinks({ link, text }) {
   return (
     <li className="navlink-li">
-      <Link to={link} className={className}>
+      <NavLink
+        to={link}
+        className={({ isActive }) => (isActive ? "activeLink" : "inactiveLink")}
+      >
         {text}
-      </Link>
+      </NavLink>
     </li>
   );
 }

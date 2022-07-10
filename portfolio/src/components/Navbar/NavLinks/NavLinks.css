@@ -2,7 +2,7 @@
   list-style: none;
 }
 
-.navlink-li > a {
+.inactiveLink {
   text-decoration: none;
   color: var(--main-text-colour);
   font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
@@ -13,11 +13,13 @@
   cursor: pointer;
 }
 
-.homeLink:active,
-.projectLink:active,
-.aboutLink:active {
-  background-color: white;
+.activeLink {
+  background-color: var(--alt-colour-1);
   color: var(--secondary-colour);
+  text-decoration: none;
+  font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 /* Breakpoint for non-mobile view*/
