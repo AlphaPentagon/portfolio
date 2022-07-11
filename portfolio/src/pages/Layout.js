@@ -15,42 +15,39 @@ export function Layout() {
       </p>
     </>
   );
-
   const [footerText, setFooterText] = useState(initialFooterTextState);
 
   const changePage = (pageClicked) => {
     console.log(pageClicked);
+
     switch (pageClicked) {
       default:
         const homeFooterText = (
-          <>
-            <p>
-              <strong>I'm a Full Stack Developer</strong> who is passionate
-              about clear design, readable code and accessibility for all. This
-              is my website where you can find out more about myself and the
-              projects that I have created.
-            </p>
-          </>
+          <p>
+            <strong>I'm a Full Stack Developer</strong> who is passionate about
+            clear design, readable code and accessibility for all. This is my
+            website where you can find out more about myself and the projects
+            that I have created.
+          </p>
         );
         setFooterText(homeFooterText);
         break;
       case "/about":
         const aboutFooterText = (
-          <>
-            <p>
-              <strong>About me</strong> footer text.
-            </p>
-          </>
+          <p>
+            <q>
+              Craig is blah blah blah, blah blah blah blah blah, blah blah blah
+            </q>
+            <em>- A Happy Customer</em>
+          </p>
         );
         setFooterText(aboutFooterText);
         break;
       case "/projects":
         const projectFooterText = (
-          <>
-            <p>
-              <strong>Project</strong> footer text.
-            </p>
-          </>
+          <p>
+            <strong>Project</strong> footer text.
+          </p>
         );
         setFooterText(projectFooterText);
         break;

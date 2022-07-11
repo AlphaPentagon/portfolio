@@ -9,7 +9,13 @@
   font-size: clamp(0.9em, 4vw, 1.2em);
 }
 
-.footerTextContainer > p > strong {
+.footerTextContainer > p > strong,
+.footerTextContainer > p > q {
   font-size: clamp(1em, 4vw, 1.2em);
   font-weight: 700;
+}
+
+.footerTextContainer > p > em {
+  font-style: italic;
+  font-weight: 400;
 }
