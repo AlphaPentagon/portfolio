@@ -4,7 +4,9 @@ nav {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
-  width: 80%;
+  padding-inline: 2rem;
+  width: 100%;
+  background-color: var(--secondary-colour);
 }
 
 .navbar-left-container,

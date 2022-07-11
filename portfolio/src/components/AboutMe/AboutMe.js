@@ -1,11 +1,10 @@
 import "./AboutMe.css";
-import Craig from "./Craig.jpg";
 
 export function AboutMe() {
   return (
     <section className="aboutMe">
       <div className="image-container">
-        <img src={Craig} alt="#" />
+        <img src="images\Craig.jpg" alt="#" />
         <h3>Craig Summers</h3>
         <p>FULL STACK DEVELOPER</p>
       </div>

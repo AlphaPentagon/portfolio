@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
+  padding-block: 4rem;
 }
 
 .portfolio-container {
@@ -25,6 +25,8 @@
 .portfolio-item-text-container {
   background-color: var(--alt-colour-1);
   border-radius: 0 0 1rem 1rem;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
 }
 
 .portfolio-title {

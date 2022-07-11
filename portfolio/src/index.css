@@ -2,42 +2,43 @@
  CSS Variables
 */
 :root {
-    --primary-colour: rgba(113, 128, 172, 1);
-    --secondary-colour: rgba(239,121,138,1);
-    --main-text-colour: rgba(255,255,255,1);
-    --secondary-text-colour: rgba(13,24,33,1);
-    --alt-colour-1: rgba(240,244,239,1);
-    --alt-colour-2: rgba(218, 65, 103,1);
-  }
+  --primary-colour: rgba(113, 128, 172, 1);
+  --secondary-colour: rgba(239, 121, 138, 1);
+  --main-text-colour: rgba(255, 255, 255, 1);
+  --secondary-text-colour: rgba(13, 24, 33, 1);
+  --alt-colour-1: rgba(240, 244, 239, 1);
+  --alt-colour-2: rgba(218, 65, 103, 1);
+}
 
-  /* 
+/* 
     CSS Reset
   */
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-  }
 
-  /*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*
     Structure and common elements
   */
-  
-  body {
-    background-image: linear-gradient(var(--secondary-colour), var(--primary-colour), var(--primary-colour));
-    color: var(--main-text-colour);
-    font-family: 'Lato', sans-serif;
-    
-   
-  }
 
-  #root {      
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 100vh;
-  }
+body {
+  background-image: linear-gradient(
+    var(--secondary-colour) 8em,
+    var(--primary-colour) 50%,
+    var(--primary-colour) 50%
+  );
+  color: var(--main-text-colour);
+  font-family: "Lato", sans-serif;
+}
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
