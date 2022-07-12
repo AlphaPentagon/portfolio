@@ -16,10 +16,10 @@ export function Portfolio() {
             <div class="portfolio-item-link-text">
               <ul>
                 <li>
-                  <a>Github</a>
+                  <button>Github</button>
                 </li>
                 <li>
-                  <a>Demo</a>
+                  <button>Demo</button>
                 </li>
               </ul>
             </div>
