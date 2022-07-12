@@ -3,10 +3,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  padding-block: 2rem;
   padding-inline: 2rem;
   width: 100%;
   background-color: var(--secondary-colour);
+  /* background-color: var(--alt-colour-1); High contrast mode */
 }
 
 .navbar-left-container,
@@ -27,11 +28,11 @@ nav {
 
 /* Breakpoint for non-mobile view*/
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
   }
   .navbar-left-container {
     padding-bottom: 0%;

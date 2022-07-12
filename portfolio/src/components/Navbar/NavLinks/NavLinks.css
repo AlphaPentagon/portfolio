@@ -5,7 +5,7 @@
 .inactiveLink {
   text-decoration: none;
   color: var(--main-text-colour);
-  font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+  font-size: var(--f-size-400);
   padding-block: 0.1rem;
   padding-inline: 0.4rem;
 }
@@ -19,10 +19,11 @@
   background-color: var(--alt-colour-1);
   color: var(--secondary-colour);
   text-decoration: none;
-  font-size: clamp(0.5rem, 2vw + 0.6rem, 1.5rem);
+  font-size: var(--f-size-400);
   padding-block: 0.1rem;
   padding-inline: 0.4rem;
   border-radius: 0.3rem;
+  font-weight: 600;
 }
 
 /* Breakpoint for non-mobile view*/

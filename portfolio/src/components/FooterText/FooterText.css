@@ -1,17 +1,18 @@
 .footerTextContainer {
   padding-block: 3rem;
   padding-inline: 1em;
+  width: min(100%, 800px);
 }
 
 .footerTextContainer > p {
   text-align: center;
   line-height: 1.4em;
-  font-size: clamp(0.9em, 4vw, 1.2em);
+  font-size: var(--f-size-300);
 }
 
 .footerTextContainer > p > strong,
 .footerTextContainer > p > q {
-  font-size: clamp(1em, 4vw, 1.2em);
+  font-size: var(--f-size-400);
   font-weight: 700;
 }
 

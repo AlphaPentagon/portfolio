@@ -46,7 +46,9 @@ export function Layout() {
       case "/projects":
         const projectFooterText = (
           <p>
-            <strong>Project</strong> footer text.
+            <strong>These are the projects I am most proud of.</strong> You can
+            click on each one to head to it’s Github repo, or hover over it to
+            find out more information.
           </p>
         );
         setFooterText(projectFooterText);
