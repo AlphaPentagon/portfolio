@@ -2,18 +2,20 @@
  CSS Variables
 */
 :root {
-  --primary-colour: rgba(113, 128, 172, 1);
-  --secondary-colour: rgba(239, 121, 138, 1);
-  --main-text-colour: rgba(255, 255, 255, 1);
-  --secondary-text-colour: rgba(13, 24, 33, 1);
-  --alt-colour-1: rgba(240, 244, 239, 1);
-  --alt-colour-2: rgba(218, 65, 103, 1);
+  --primary-colour: hsl(220.9, 52.7%, 56.9%);
+  --dark-bg-colour: hsl(225.7, 34.8%, 25.9%);
+  --light-bg-colour: hsl(20, 14.3%, 95.9%);
+  --dark-text-colour: hsl(225.7, 34.8%, 25.9%);
+  --dark-text-shade-colour: hsla(225.7, 34.8%, 25.9%, 80%);
+  --light-text-colour: hsl(20, 14.3%, 95.9%);
+  --accent-colour-light: hsl(208.5, 36.5%, 67.3%);
+  --accent-colour-dark: hsl(228.9, 15.8%, 52.9%);
 
-  --f-size-300: calc(1rem + 0.390625vw);
-  --f-size-400: calc(1.125rem + 0.390625vw);
-  --f-size-600: calc(1.5rem + 0.390625vw);
-  --f-size-800: calc(2rem + 0.390625vw);
-  --f-size-900: clamp(3.5rem, 3.5rem + 2vw, 80px);
+  --f-size-300: calc(1rem + 0.390625vw); /* 16px */
+  --f-size-400: calc(1.125rem + 0.390625vw); /* 18px */
+  --f-size-600: calc(1.5rem + 0.390625vw); /* 24px */
+  --f-size-800: calc(2rem + 0.390625vw); /* 32px */
+  --f-size-900: clamp(3.5rem, 3.5rem + 2vw, 80px); /* 56px */
 }
 
 /* 
@@ -43,9 +45,5 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(
-    var(--secondary-colour) 8em,
-    var(--primary-colour) 50%,
-    var(--primary-colour) 50%
-  );
+  background-color: var(--light-bg-colour);
 }
