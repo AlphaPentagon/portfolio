@@ -15,8 +15,10 @@ export function Portfolio() {
           <div class="portfolio-item-link-container">
             <div class="portfolio-item-link-text">
               <ul>
+
                 <li>Github</li>
                 <li>Demo</li>
+
               </ul>
             </div>
           </div>
