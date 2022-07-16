@@ -4,10 +4,10 @@
 
 .inactiveLink {
   text-decoration: none;
-  color: var(--main-text-colour);
-  font-size: var(--f-size-400);
-  padding-block: 0.1rem;
-  padding-inline: 0.4rem;
+  color: var(--dark-text-colour);
+  font-size: var(--f-size-300);
+  padding-bottom: 0.3rem;
+  padding-inline: 0.2rem;
 }
 
 .navlink-li:hover {
@@ -16,14 +16,16 @@
 }
 
 .activeLink {
-  background-color: var(--alt-colour-1);
-  color: var(--secondary-colour);
+  /* background-color: var(--alt-colour-1); */
+  color: var(--dark-text-colour);
   text-decoration: none;
-  font-size: var(--f-size-400);
-  padding-block: 0.1rem;
-  padding-inline: 0.4rem;
-  border-radius: 0.3rem;
-  font-weight: 600;
+  font-size: var(--f-size-300);
+  padding-bottom: 0.3rem;
+  padding-inline: 0.2rem;
+
+  /* border-radius: 0.3rem; */
+  /* font-weight: 600; */
+  border-bottom: 3px solid var(--accent-colour-light);
 }
 
 /* Breakpoint for non-mobile view*/

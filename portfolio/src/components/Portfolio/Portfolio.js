@@ -15,12 +15,8 @@ export function Portfolio() {
           <div class="portfolio-item-link-container">
             <div class="portfolio-item-link-text">
               <ul>
-                <li>
-                  <a href="#">Github</a>
-                </li>
-                <li>
-                  <a href="#">Demo</a>
-                </li>
+                <li>Github</li>
+                <li>Demo</li>
               </ul>
             </div>
           </div>

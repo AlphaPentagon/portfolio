@@ -1,13 +1,14 @@
 nav {
+  border-top: 3px solid var(--primary-colour);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 2rem;
+  padding-block: 1rem;
   padding-inline: 2rem;
   width: 100%;
-  background-color: var(--secondary-colour);
-  /* background-color: var(--alt-colour-1); High contrast mode */
+  background-color: hsla(0, 0%, 100%, 0.1);
+  box-shadow: 0 1px 2px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .navbar-left-container,
@@ -40,6 +41,6 @@ nav {
   }
 
   .navbar-right-container {
-    width: 18%;
+    width: 10%;
   }
 }
