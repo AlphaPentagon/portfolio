@@ -1,6 +1,6 @@
 .aboutMe {
   display: grid;
-  grid-template-rows: 1fr 1.2fr;
+  grid-template-rows: 1fr 1.2fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   row-gap: 1rem;
