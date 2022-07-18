@@ -8,13 +8,15 @@
   --dark-text-colour: hsl(225.7, 34.8%, 25.9%);
   --dark-text-shade-colour: hsla(225.7, 34.8%, 25.9%, 80%);
   --light-text-colour: hsl(20, 14.3%, 95.9%);
+  --light-text-colour-shade: hsla(20, 14.3%, 95.9%, 0.9);
   --accent-colour-light: hsl(208.5, 36.5%, 67.3%);
+  --accent-colour-light-shade: hsla(208.5, 40%, 80%, 1);
   --accent-colour-dark: hsl(228.9, 15.8%, 52.9%);
 
-  --f-size-300: calc(1rem + 0.390625vw); /* 16px */
-  --f-size-400: calc(1.125rem + 0.390625vw); /* 18px */
-  --f-size-600: calc(1.5rem + 0.390625vw); /* 24px */
-  --f-size-800: calc(2rem + 0.390625vw); /* 32px */
+  --f-size-300: calc(1rem + 0.190625vw); /* 16px */
+  --f-size-400: calc(1.125rem + 0.190625vw); /* 18px */
+  --f-size-600: calc(1.5rem + 0.190625vw); /* 24px */
+  --f-size-800: calc(2rem + 0.190625vw); /* 32px */
   --f-size-900: clamp(3.5rem, 3.5rem + 2vw, 80px); /* 56px */
 }
 
