@@ -1,4 +1,5 @@
 .title-container {
+  padding-block: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +11,7 @@
   font-size: var(--f-size-800);
   color: var(--dark-text-colour);
   font-weight: 600;
-  padding-bottom: 1rem;
+  padding-block: 1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
 }
@@ -20,13 +21,13 @@
   color: var(--dark-text-shade-colour);
   font-weight: 400;
   text-transform: uppercase;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .title-avatar-container {
   background-color: var(--primary-colour);
   border-radius: 50%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 }
 .title-avatar {
@@ -41,6 +42,7 @@
   justify-content: center;
   width: 100%;
   row-gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .title-animation-item {
