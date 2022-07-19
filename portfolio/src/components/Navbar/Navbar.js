@@ -7,8 +7,8 @@ function Navbar({ changePage }) {
     <nav>
       <ul className="navbar-left-container">
         <NavLinks link="/" text="HOME" changePage={changePage}></NavLinks>
-        <NavLinks link="/projects" text="PROJECTS" changePage={changePage} />
         <NavLinks link="/about" text="ABOUT" changePage={changePage} />
+        <NavLinks link="/projects" text="PROJECTS" changePage={changePage} />
       </ul>
       <ul className="navbar-right-container">
         <NavIcons

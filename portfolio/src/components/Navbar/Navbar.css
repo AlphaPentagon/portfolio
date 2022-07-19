@@ -41,6 +41,6 @@ nav {
   }
 
   .navbar-right-container {
-    width: 10%;
+    width: max(10%, 120px);
   }
 }

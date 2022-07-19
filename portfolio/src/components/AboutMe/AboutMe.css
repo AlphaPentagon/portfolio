@@ -8,11 +8,15 @@
   padding-top: 2em;
   padding-bottom: 1rem;
   padding-inline: 1rem;
+  /* dark mode
+  
   background-color: var(--dark-bg-colour);
-  color: var(--light-text-colour);
-  /* border-radius: 1rem; */
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
-  border-top: 6px solid var(--accent-colour-light);
+  color: var(--light-text-colour); 
+  
+  */
+
+  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  border-top: 6px solid var(--primary-colour); */
 }
 
 .image-container {
@@ -23,8 +27,7 @@
 }
 
 .image-container > img {
-  max-width: 100%;
-  width: 80%;
+  width: max(80%, 120px);
   border-radius: 50%;
   margin-bottom: 1rem;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
@@ -37,7 +40,83 @@
 
 .aboutMe-more {
   font-size: var(--f-size-400);
-  color: var(--light-text-colour-shade);
+  color: var(--dark-text-colour);
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  height: 30vh;
+}
+
+.info-container > h2 {
+  font-size: var(--f-size-800);
+  font-weight: 600;
+  color: var(--primary-colour);
+}
+
+.info-container > p {
+  font-size: var(--f-size-400);
+  font-weight: 400;
+}
+
+.aboutMe-button-container {
+  /* grid-column-start: 2;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.aboutMe-button {
+  background-color: var(--light-bg-colour);
+  padding-block: 0.8rem;
+  padding-inline: 0.6rem;
+  color: var(--dark-text-colour);
+  font-size: var(--f-size-400);
+  font-weight: 600;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  background-color: var(--primary-colour);
+  color: var(--light-text-colour);
+}
+
+.aboutMe-button:hover {
+  transform: scale(108%);
+  cursor: pointer;
+}
+
+.aboutMe-button-active {
+  background-color: var(--light-bg-colour);
+  padding-block: 0.8rem;
+  padding-inline: 0.6rem;
+  color: var(--dark-text-colour);
+  font-size: var(--f-size-400);
+  font-weight: 600;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  background-color: var(--light-bg-colour);
+  transform: scale(104%);
+  border: 2px solid var(--accent-colour-light);
+  color: var(--primary-colour);
+}
+
+#aboutMe-button-active:hover {
+  transform: scale(104%);
+}
+
+.aboutMe-arrow {
+  color: var(--accent-colour-light);
+  font-size: var(--f-size-800);
+  font-weight: 400;
+  padding-left: 1rem;
 }
 
 .heartbeat {
@@ -126,69 +205,18 @@
   }
 }
 
-.info-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  text-align: center;
-  padding-bottom: 2rem;
-  height: 30vh;
-}
-
-.info-container > h2 {
-  font-size: var(--f-size-600);
-  font-weight: 600;
-}
-
-.info-container > p {
-  font-size: var(--f-size-300);
-  font-weight: 300;
-}
-
-.aboutMe-button-container {
-  /* grid-column-start: 2;*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-}
-
-.aboutMe-button {
-  background-color: var(--accent-colour-light);
-  padding-block: 0.8rem;
-  padding-inline: 0.6rem;
-  color: var(--dark-text-colour);
-  font-size: var(--f-size-400);
-  font-weight: 600;
-  border: none;
-  border-radius: 0.3rem;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.4);
-}
-
-.aboutMe-button:hover {
-  transform: scale(108%);
-  cursor: pointer;
-}
-
-#aboutMe-button-active {
-  background-color: var(--accent-colour-light-shade);
-  transform: scale(104%);
-}
-
-#aboutMe-button-active:hover {
-  transform: scale(104%);
-}
-
 @media only screen and (min-width: 500px) {
   .aboutMe {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    border-radius: 1rem;
   }
   .info-container {
     text-align: left;
+  }
+  .aboutMe-button-container {
+    justify-content: start;
   }
 }
