@@ -2,6 +2,7 @@ import "./AboutMe.css";
 import { useState } from "react";
 
 export function AboutMe() {
+  const [active, setActive] = useState("1");
   const [content, setContent] = useState(
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus esse
@@ -10,7 +11,8 @@ export function AboutMe() {
       laborum maxime.
     </p>
   );
-  function handleClick(content) {
+  function handleClick(e, content) {
+    setActive(e.target.id);
     switch (content) {
       default:
         break;
@@ -36,8 +38,8 @@ export function AboutMe() {
         );
         setContent(experience);
         break;
-      case "wants":
-        const wants = (
+      case "interests":
+        const interests = (
           <p>
             Inventore neque libero aperiam sequi obcaecati eveniet voluptatibus
             velit voluptates unde culpa qui, atque ratione, magni ut, corrupti
@@ -45,10 +47,13 @@ export function AboutMe() {
             porro vitae debitis voluptatibus.
           </p>
         );
-        setContent(wants);
+        setContent(interests);
         break;
     }
   }
+
+  // when button is clicked, apply active styling
+  // use an onclick to trigger and dynamically change class
   return (
     <section className="aboutMe">
       <div className="image-container">
@@ -61,33 +66,41 @@ export function AboutMe() {
         {content}
       </div>
       <p className="aboutMe-more heartbeat">
-        Click to find out more <span>&#8594;</span>
+        Click to find out more <span className="aboutMe-arrow">&#8594;</span>
       </p>
       <div className="aboutMe-button-container">
         <button
-          className="aboutMe-button"
-          onClick={() => {
-            handleClick("general");
+          className={
+            active === "1" ? "aboutMe-button-active" : "aboutMe-button"
+          }
+          onClick={(e) => {
+            handleClick(e, "general");
           }}
-          id="aboutMe-button-active"
+          id={"1"}
         >
           General
         </button>
         <button
-          className="aboutMe-button"
-          onClick={() => {
-            handleClick("experience");
+          className={
+            active === "2" ? "aboutMe-button-active" : "aboutMe-button"
+          }
+          onClick={(e) => {
+            handleClick(e, "experience");
           }}
+          id={"2"}
         >
           Experience
         </button>
         <button
-          className="aboutMe-button"
-          onClick={() => {
-            handleClick("wants");
+          className={
+            active === "3" ? "aboutMe-button-active" : "aboutMe-button"
+          }
+          onClick={(e) => {
+            handleClick(e, "interests");
           }}
+          id={"3"}
         >
-          Wants
+          Interests
         </button>
       </div>
     </section>

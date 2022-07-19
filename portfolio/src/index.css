@@ -3,6 +3,7 @@
 */
 :root {
   --primary-colour: hsl(220.9, 52.7%, 56.9%);
+  --primary-colour-shade: hsla(220.9, 52.7%, 56.9%, 0.8);
   --dark-bg-colour: hsl(225.7, 34.8%, 25.9%);
   --light-bg-colour: hsl(20, 14.3%, 95.9%);
   --dark-text-colour: hsl(225.7, 34.8%, 25.9%);
