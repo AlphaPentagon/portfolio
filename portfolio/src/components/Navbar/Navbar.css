@@ -4,11 +4,17 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 1rem;
-  padding-inline: 2rem;
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
   width: 100%;
   background-color: hsla(0, 0%, 100%, 0.1);
   box-shadow: 0 1px 2px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.nav-logo {
+  width: 90px;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 .navbar-left-container,
@@ -19,8 +25,8 @@ nav {
 }
 
 .navbar-left-container {
-  width: 100%;
   padding-bottom: 1.3rem;
+  width: 100%;
 }
 
 .navbar-right-container {
@@ -33,11 +39,15 @@ nav {
   nav {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    padding-inline: 0.2rem;
   }
   .navbar-left-container {
     padding-bottom: 0%;
-    max-width: 30%;
+    width: auto;
+  }
+
+  .nav-logo {
+    padding-bottom: 0rem;
   }
 
   .navbar-right-container {

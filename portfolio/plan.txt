@@ -1,0 +1,23 @@
+// Projects page
+
+    // When click on more
+        // button expands to fill most of portfolio item div
+        // new additional text appears
+
+// About page
+
+    // center content / stop div overflowing when in mobile mode ✅
+    // change text to real content
+    // change photo to new photo
+
+// Layout
+
+    // add footer content
+        // copyright?
+        // move social icons down?
+
+    // navbar
+        // move links to right?
+        // logo top left?
+    
+    // favicon

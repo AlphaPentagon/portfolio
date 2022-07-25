@@ -4,7 +4,7 @@
 
 .navicon-li > a {
   text-decoration: none;
-  color: var(--dark-text-colour);
+  color: var(--light-text-colour);
   font-size: var(--f-size-400);
 }
 
