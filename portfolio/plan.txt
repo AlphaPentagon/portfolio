@@ -14,10 +14,10 @@
 
     // add footer content
         // copyright?
-        // move social icons down?
+        // move social icons down? ✅
 
     // navbar
-        // move links to right?
-        // logo top left?
+        // move links to right? ✅
+        // logo top left? ✅
     
-    // favicon
+    // favicon ✅

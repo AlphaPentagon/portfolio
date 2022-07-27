@@ -1,7 +1,12 @@
+import { useState } from "react";
 import "./PortfolioItem.css";
 
 export const PortfolioItem = ({ heading, text, links, more, description }) => {
-  const handleClick = (more) => {};
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
   return (
     <div className="portfolio-item-container">
@@ -29,12 +34,21 @@ export const PortfolioItem = ({ heading, text, links, more, description }) => {
       </div>
 
       <button
-        className="portfolio-item-more portfolio-item-text-full"
-        onClick={() => {
-          handleClick(more);
-        }}
+        className={`portfolio-item-more ${
+          clicked
+            ? "portfolio-item-text-full-click"
+            : "portfolio-item-text-full"
+        } `}
+        onClick={handleClick}
       >
-        more
+        {clicked ? (
+          <>
+            {more}
+            <button onClick={handleClick}>close</button>
+          </>
+        ) : (
+          "more"
+        )}
       </button>
     </div>
   );

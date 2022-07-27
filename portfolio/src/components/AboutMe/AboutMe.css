@@ -75,7 +75,7 @@
 
 .aboutMe-button {
   background-color: var(--light-bg-colour);
-  padding-block: 0.8rem;
+  padding-block: 0.6rem;
   padding-inline: 0.6rem;
   color: var(--dark-text-colour);
   font-size: var(--f-size-400);
@@ -94,7 +94,7 @@
 
 .aboutMe-button-active {
   background-color: var(--light-bg-colour);
-  padding-block: 0.8rem;
+  padding-block: 0.6rem;
   padding-inline: 0.6rem;
   color: var(--dark-text-colour);
   font-size: var(--f-size-400);

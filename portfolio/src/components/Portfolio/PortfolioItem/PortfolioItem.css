@@ -95,8 +95,12 @@
   background-color: var(--accent-colour-light-shade);
 }
 
-.portfolio-item-text-full:hover {
-  opacity: 100;
+.portfolio-item-text-full-click {
   height: 90%;
   width: 100%;
+  display: block;
+  position: absolute;
+
+  transition: width 0.5s, height 0.5s;
+  transition-timing-function: ease-in;
 }
