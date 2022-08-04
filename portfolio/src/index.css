@@ -37,9 +37,12 @@
   */
 
 body {
-  color: var(--main-text-colour);
+  color: var(--dark-text-colour);
   font-family: "Lato", sans-serif;
   font-size: 16px;
+  background-color: var(--light-bg-colour);
+  min-height: 100vh;
+  width: 100%;
 }
 
 #root {
@@ -47,7 +50,4 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  background-color: var(--light-bg-colour);
-  width: 100%;
 }

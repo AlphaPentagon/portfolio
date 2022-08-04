@@ -66,32 +66,35 @@
 .portfolio-item-more {
   grid-column-start: 1;
   grid-column-end: 3;
-
-  justify-self: end;
   grid-row-gap: 0;
   border: none;
   border-radius: 0.2rem;
   background-color: var(--accent-colour-light-shade);
-  padding-inline: 0.5rem;
-  padding-block: 0.3rem;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
-  color: var(--dark-text-shade);
-  font-size: var(--f-size-300);
-}
 
-.portfolio-item-more:hover {
-  cursor: pointer;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
 }
 
 .portfolio-item-text-full {
-  width: 20%;
+  text-align: center;
+  font-size: var(--f-size-400);
+  line-height: calc(1.125rem + 0.190625vw);
+  font-weight: 600;
+  color: var(--dark-text-shade-colour);
+  width: 100%;
   height: 10%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 100;
   position: absolute;
-  bottom: 1rem;
   transition: width 0.5s, height 0.5s;
   transition-timing-function: ease-in;
+  bottom: 1rem;
+  background-color: var(--accent-colour-light);
+}
+
+.portfolio-item-text-full:hover {
+  cursor: pointer;
   background-color: var(--accent-colour-light-shade);
 }
 
@@ -100,7 +103,72 @@
   width: 100%;
   display: block;
   position: absolute;
-
+  bottom: 1rem;
   transition: width 0.5s, height 0.5s;
   transition-timing-function: ease-in;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  text-align: center;
+}
+
+.more-text {
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.fade-out {
+  animation: fade-out ease 1.2s;
+}
+
+.more-container {
+  font-size: var(--f-size-300);
+  color: var(--dark-text-colour);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.close-button {
+  font-size: var(--f-size-300);
+  color: var(--dark-text-colour);
+  background-color: hsla(208.5, 42%, 75%, 0.8);
+  text-align: center;
+  box-shadow: 0 -2px 4px 0 hsla(208.5, 40%, 72%, 0.8);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  background-color: var(--accent-colour-light);
+}
+
+@media only screen and (min-width: 800px) {
+  .more-text {
+    font-size: 1.1rem;
+  }
 }

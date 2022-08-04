@@ -33,23 +33,26 @@ export const PortfolioItem = ({ heading, text, links, more, description }) => {
         <p>{text}</p>
       </div>
 
-      <button
+      <div
         className={`portfolio-item-more ${
           clicked
             ? "portfolio-item-text-full-click"
             : "portfolio-item-text-full"
         } `}
-        onClick={handleClick}
       >
         {clicked ? (
-          <>
-            {more}
-            <button onClick={handleClick}>close</button>
-          </>
+          <div className="more-container fade-in">
+            <p className="more-text">{more}</p>
+            <div className="close-button" onClick={handleClick}>
+              <p>&#8744;</p>
+            </div>
+          </div>
         ) : (
-          "more"
+          <div className="fade-out" onClick={handleClick}>
+            <p className="fade-out">&#8743;</p>
+          </div>
         )}
-      </button>
+      </div>
     </div>
   );
 };

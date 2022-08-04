@@ -1,8 +1,12 @@
 // Projects page
 
     // When click on more
-        // button expands to fill most of portfolio item div
-        // new additional text appears
+        // button expands to fill most of portfolio item div ✅
+        // new additional text appears ✅
+    
+    // when click close
+        // button minimises back to button size
+        // more appears again
 
 // About page
 
