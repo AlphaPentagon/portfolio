@@ -1,13 +1,20 @@
-.aboutMe {
+.aboutMeSection {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: max(100%, 1200px);
+  position: relative;
+}
+
+.aboutMeContainer {
   display: grid;
   justify-items: center;
   align-items: center;
   row-gap: 1rem;
-  width: max(100%, 1200px);
+
   /* margin-block: 1rem; */
-  padding-top: 2em;
-  padding-bottom: 1rem;
-  padding-inline: 1rem;
+
   /* dark mode
   
   background-color: var(--dark-bg-colour);
@@ -24,6 +31,7 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  align-self: start;
 }
 
 .image-container > img {
@@ -44,23 +52,28 @@
 }
 
 .info-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   text-align: center;
-  padding-bottom: 2rem;
-  height: 30vh;
+  background-color: var(--accent-colour-light-shade);
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
-.info-container > h2 {
+h2 {
   font-size: var(--f-size-800);
   font-weight: 600;
   color: var(--primary-colour);
 }
 
-.info-container > p {
-  font-size: var(--f-size-400);
+p {
+  font-size: var(--f-size-300);
   font-weight: 400;
 }
 
@@ -69,6 +82,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
   width: 100%;
   gap: 1.5rem;
 }
@@ -205,9 +221,8 @@
 }
 
 @media only screen and (min-width: 500px) {
-  .aboutMe {
+  .aboutMeContainer {
     grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     border-radius: 1rem;
@@ -216,6 +231,5 @@
     text-align: left;
   }
   .aboutMe-button-container {
-    justify-content: start;
   }
 }
