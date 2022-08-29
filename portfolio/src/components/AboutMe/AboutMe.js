@@ -64,7 +64,68 @@ export function AboutMe() {
           engineering teams, and I am excited to put it all into practise in my
           first junior role.
         </p>
+        <p>Something about working in teams/pairs...</p>
+        <p>Something about working in IT Support...</p>
+        <div className="skills-grid">
+          <div className="skill-container">
+            <i className="fa-brands fa-html5"></i>
+            <p className="skill-name">HTML 5</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-css3-alt"></i>
+            <p className="skill-name">CSS 3</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-square-js"></i>
+            <p className="skill-name">Javascript</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-react"></i>
+            <p className="skill-name">React</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-node-js"></i>
+            <p className="skill-name">Node.js/Express</p>
+          </div>
+          <div className="skill-container">
+            <img
+              className="skill-icon"
+              alt=""
+              src="/icons/postgresql.svg"
+            ></img>
+            <p className="skill-name">PostgreSQL</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-git-alt"></i>
+            <p className="skill-name">Git</p>
+          </div>
+          <div className="skill-container">
+            <i className="fa-brands fa-github"></i>
+            <p className="skill-name">Github</p>
+          </div>
+          <div className="skill-container">
+            <img className="skill-icon" alt="" src="/icons/nextjs.svg"></img>
+            <p className="skill-name">Next.js</p>
+          </div>
+          <div className="skill-container">
+            <img className="skill-icon" alt="" src="/icons/jest.svg"></img>
+            <p className="skill-name">Jest</p>
+          </div>
+          <div className="skill-container">
+            <img className="skill-icon" alt="" src="/icons/cypress.svg"></img>
+            <p className="skill-name">Cypress</p>
+          </div>
+          <div className="skill-container">
+            <img className="skill-icon" alt="" src="/icons/heroku.svg"></img>
+            <p className="skill-name">Heroku</p>
+          </div>
+          <div className="skill-container">
+            <img className="skill-icon" alt="" src="/icons/netlify.svg"></img>
+            <p className="skill-name">Netlify</p>
+          </div>
+        </div>
       </article>
+
       <article className="additional-article-container" id="interests">
         <h3>Interests</h3>
         <p className="article-first-para">
