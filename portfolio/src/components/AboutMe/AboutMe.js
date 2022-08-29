@@ -20,10 +20,10 @@ export function AboutMe() {
           My Story
         </a>
         <a href="#experience" className="aboutMe-button">
-          Experience
+          Experience & Skills
         </a>
         <a href="#interests" className="aboutMe-button">
-          Interests
+          Interests & Hobbies
         </a>
       </div>
       <article className="additional-article-container" id="my-story">
@@ -55,7 +55,7 @@ export function AboutMe() {
         </p>
       </article>
       <article className="additional-article-container" id="experience">
-        <h3>Experience</h3>
+        <h3>Experience & Skills</h3>
         <p className="article-first-para">
           I have just graduated from the School of Code bootcamp. After 16 weeks
           of intensive & accelerated learning, I have gained strong technical
@@ -68,23 +68,23 @@ export function AboutMe() {
         <p>Something about working in IT Support...</p>
         <div className="skills-grid">
           <div className="skill-container">
-            <i className="fa-brands fa-html5"></i>
+            <i className="fa-brands fa-html5 skill-icon"></i>
             <p className="skill-name">HTML 5</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-css3-alt"></i>
+            <i className="fa-brands fa-css3-alt skill-icon"></i>
             <p className="skill-name">CSS 3</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-square-js"></i>
+            <i className="fa-brands fa-square-js skill-icon"></i>
             <p className="skill-name">Javascript</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react skill-icon"></i>
             <p className="skill-name">React</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-node-js"></i>
+            <i className="fa-brands fa-node-js skill-icon"></i>
             <p className="skill-name">Node.js/Express</p>
           </div>
           <div className="skill-container">
@@ -96,11 +96,11 @@ export function AboutMe() {
             <p className="skill-name">PostgreSQL</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-git-alt"></i>
+            <i className="fa-brands fa-git-alt fa-4x skill-icon"></i>
             <p className="skill-name">Git</p>
           </div>
           <div className="skill-container">
-            <i className="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github skill-icon"></i>
             <p className="skill-name">Github</p>
           </div>
           <div className="skill-container">
@@ -127,12 +127,18 @@ export function AboutMe() {
       </article>
 
       <article className="additional-article-container" id="interests">
-        <h3>Interests</h3>
+        <h3>Interests & Hobbies</h3>
         <p className="article-first-para">
-          When I'm not being a climbing frame for my young daughter, I enjoy:
-          writing, recording and playing music, starting (but rarely finishing)
-          videogames, losing to my wife at cards and spending time with friends
-          and family.
+          When I'm not being a climbing frame for my young daughter, I enjoy:{" "}
+          <a
+            href="https://soundcloud.com/craig-summers"
+            target="_blank"
+            rel="noreferrer"
+          >
+            writing, recording and playing music
+          </a>
+          , starting (but rarely finishing) videogames, losing to my wife at
+          cards and spending time with friends and family.
         </p>
         <p>
           I also enjoy attending gigs and music festivals and I am passionate

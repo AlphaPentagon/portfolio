@@ -50,6 +50,10 @@ article > h3 {
   border-top: 2px dashed var(--accent-colour-light);
 }
 
+.article-first-para > a {
+  color: var(--primary-colour);
+}
+
 .info-container {
   position: absolute;
   top: 0;
@@ -103,6 +107,7 @@ article > p {
   background-color: var(--primary-colour);
   color: var(--light-text-colour);
   text-decoration: none;
+  text-align: center;
 }
 
 .aboutMe-button:hover {
@@ -135,6 +140,29 @@ article > p {
   font-weight: bold;
 }
 
+.skills-grid {
+  margin: 2rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-icon {
+  width: 40vw;
+  font-size: 40vw;
+  text-align: center;
+}
+
 @media only screen and (min-width: 500px) {
   .info-container {
     text-align: left;
@@ -152,5 +180,17 @@ article > p {
   article > h3,
   article > p {
     text-align: left;
+  }
+  .skills-grid {
+    margin: 4rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .skill-icon {
+    width: 12vw;
+    font-size: 12vw;
   }
 }
