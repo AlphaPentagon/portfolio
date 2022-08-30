@@ -53,19 +53,49 @@ export function AboutMe() {
           agile software engineering teams, and I am excited to put it all into
           practise in my first junior role.
         </p>
+        <p id="top-link">
+          Back to <a href="#top">top</a>
+        </p>
       </article>
       <article className="additional-article-container" id="experience">
         <h3>Experience & Skills</h3>
         <p className="article-first-para">
-          I have just graduated from the School of Code bootcamp. After 16 weeks
-          of intensive & accelerated learning, I have gained strong technical
-          skills across a variety of full stack technology, as well as
-          invaluable experience of working within diverse agile software
-          engineering teams, and I am excited to put it all into practise in my
-          first junior role.
+          I have worked in tech for the last 7 years and have recently made the
+          transition into software development. In August 2022 I graduated from
+          the School of Code bootcamp - a 16 week, intensive coding course. I
+          was chosen from over 1000 applicants and am eternally grateful for the
+          opportunity to attend.
         </p>
-        <p>Something about working in teams/pairs...</p>
-        <p>Something about working in IT Support...</p>
+        <p>
+          Each week on the course we were put into random pairs or teams and
+          tasked with learning new coding concepts and technology. Learning took
+          the form of guided seminars, workshops and discussions, and at the end
+          of each week we had a 'hackathon', where we cemented our knowledge and
+          put it into practise by creating something in our groups - you can
+          view the work I contributed to in the hackathons{" "}
+          <a
+            href="https://github.com/stars/AlphaPentagon/lists/soc-weekly-hackathons"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+        </p>
+        <p>
+          During the course I also took part in two extended projects - a 1 week
+          project, midway through the course, and a 4 week project at the end of
+          the course. Working as part of an Agile Software Engineering team, we
+          were tasked with creating solutions to real life problems by creating
+          fullstack apps. I'm really proud of the work I did - you can find more
+          information on my <a href="/projects">projects</a> page.
+        </p>
+        <p>
+          Additionally, I have extensive skills in 1st/2nd line IT Support, such
+          as O365 administration, mobile device management, active directory,
+          sccm and general support for Windows, Mac and Linux.
+        </p>
+
+        <h4>Skills</h4>
         <div className="skills-grid">
           <div className="skill-container">
             <i className="fa-brands fa-html5 skill-icon"></i>
@@ -124,6 +154,9 @@ export function AboutMe() {
             <p className="skill-name">Netlify</p>
           </div>
         </div>
+        <p id="top-link">
+          Back to <a href="#top">top</a>
+        </p>
       </article>
 
       <article className="additional-article-container" id="interests">
@@ -144,10 +177,10 @@ export function AboutMe() {
           I also enjoy attending gigs and music festivals and I am passionate
           about wellbeing and mental health.
         </p>
+        <p id="top-link">
+          Back to <a href="#top">top</a>
+        </p>
       </article>
-      <p className="top-link">
-        Back to <a href="#top">top</a>
-      </p>
     </section>
   );
 }
