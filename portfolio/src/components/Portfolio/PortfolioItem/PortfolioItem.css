@@ -1,13 +1,16 @@
 .portfolio-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   line-height: 1.2rem;
   color: var(--dark-text-shade-colour);
-  font-size: var(--f-size-400);
+  font-size: var(--f-size-300);
   font-weight: 400;
   grid-column-start: 1;
   grid-column-end: 3;
   align-self: center;
-  padding-block: 1.2rem;
+  padding-bottom: 2.5rem;
 }
 
 .portfolio-item-text > p:nth-child(1) {
@@ -21,15 +24,17 @@
   align-items: flex-start;
   justify-content: center;
   align-self: start;
+  width: 95%;
 }
 
 .portfolio-item-title-container > ul {
   list-style: none;
   display: flex;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
   color: var(--primary-colour);
   font-size: var(--f-size-400);
-  font-weight: 600;
+  font-weight: 400;
+  flex-wrap: wrap;
 }
 
 .portfolio-item-link > a {
@@ -42,8 +47,8 @@
 }
 
 .portfolio-item-heading {
-  font-size: var(--f-size-600);
-  font-weight: 400;
+  font-size: var(--f-size-400);
+  font-weight: 600;
   padding-bottom: 0.8rem;
   text-align: left;
   color: var(--secondary-text-colour);
@@ -51,13 +56,13 @@
 
 .portfolio-item-img {
   display: block;
-  border-radius: 0.5rem;
-  background-image: url("../../../../public/images/wellbeing_toolkit.PNG");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  height: 100px;
-  width: 120px;
+  border-radius: 0.2rem;
+  /* background-image: url("../../../../public/images/wellbeing_toolkit.PNG");
+  background-position: center; /* Center the image
+  background-repeat: no-repeat; /* Do not repeat the image
+  background-size: cover; Resize the background image to cover the entire container */
+  height: auto;
+  width: 160px;
   justify-self: end;
   align-self: start;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
@@ -70,7 +75,6 @@
   border: none;
   border-radius: 0.2rem;
   background-color: var(--accent-colour-light-shade);
-
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
 }
 
@@ -99,7 +103,7 @@
 }
 
 .portfolio-item-text-full-click {
-  height: 90%;
+  height: 92%;
   width: 100%;
   display: block;
   position: absolute;

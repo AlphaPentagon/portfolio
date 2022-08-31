@@ -6,7 +6,7 @@ function Title() {
   return (
     <div className="title-container">
       <h1 className="title-main-heading">Craig Summers</h1>
-      <h2 className="title-sub-heading">Full Stack Developer</h2>
+      <h2 className="title-sub-heading">Software Developer</h2>
       <div className="title-avatar-container">
         <Avatar
           className="title-avatar"

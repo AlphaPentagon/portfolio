@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import NavIcons from "../Navbar/NavIcons/NavIcons";
 
 export function AboutMe() {
   return (
@@ -13,8 +14,30 @@ export function AboutMe() {
             I'm a junior software developer with a passion for problem solving
             and an enthusiasm for continuous learning.
           </p>
+          <p>
+            Below you'll find more information about me - click on the buttons
+            to jump to the relevant section, or click on my social links if you
+            would like to connect.
+          </p>
+          <div className="social-links-container">
+            <ul>
+              <NavIcons
+                link="https://github.com/AlphaPentagon"
+                className="fa-brands fa-github aboutMe-icons"
+              />
+              <NavIcons
+                link="https://twitter.com/cragglesummers"
+                className="fa-brands fa-twitter aboutMe-icons"
+              />
+              <NavIcons
+                link="https://www.linkedin.com/in/craig-summers89/"
+                className="fa-brands fa-linkedin aboutMe-icons"
+              />
+            </ul>
+          </div>
         </article>
       </div>
+
       <div className="aboutMe-button-container">
         <a href="#my-story" className="aboutMe-button">
           My Story
@@ -29,8 +52,8 @@ export function AboutMe() {
       <article className="additional-article-container" id="my-story">
         <h3>My Story</h3>
         <p className="article-first-para">
-          I was an IT Support Technician for 7 years, but grew tired of telling
-          people to "turn it off and on".
+          I worked as an IT Support Technician in Higher Education for 7 years,
+          but grew tired of telling people to "turn it off and on".
         </p>
         <p>
           I had a desire to learn more about tech and challenge myself, so I
@@ -39,7 +62,7 @@ export function AboutMe() {
         </p>
         <p>
           This sparked a passion and I knew it was something I wanted to move
-          into as a career. Knowing that I would benefit from some structured
+          into as a career. Realising that I would benefit from some structured
           learning, I discovered the School of Code free bootcamp and applied.
         </p>
         <p>
@@ -54,7 +77,7 @@ export function AboutMe() {
           practise in my first junior role.
         </p>
         <p id="top-link">
-          Back to <a href="#top">top</a>
+          <a href="#top">Back to top</a>
         </p>
       </article>
       <article className="additional-article-container" id="experience">
@@ -72,7 +95,7 @@ export function AboutMe() {
           the form of guided seminars, workshops and discussions, and at the end
           of each week we had a 'hackathon', where we cemented our knowledge and
           put it into practise by creating something in our groups - you can
-          view the work I contributed to in the hackathons{" "}
+          view them all{" "}
           <a
             href="https://github.com/stars/AlphaPentagon/lists/soc-weekly-hackathons"
             target="_blank"
@@ -80,6 +103,7 @@ export function AboutMe() {
           >
             here
           </a>
+          .
         </p>
         <p>
           During the course I also took part in two extended projects - a 1 week
@@ -155,30 +179,39 @@ export function AboutMe() {
           </div>
         </div>
         <p id="top-link">
-          Back to <a href="#top">top</a>
+          <a href="#top">Back to top</a>
         </p>
       </article>
 
       <article className="additional-article-container" id="interests">
         <h3>Interests & Hobbies</h3>
         <p className="article-first-para">
-          When I'm not being a climbing frame for my young daughter, I enjoy:{" "}
+          When I'm not being a climbing frame for my young daughter, I enjoy:
+          writing, recording and playing{" "}
           <a
             href="https://soundcloud.com/craig-summers"
             target="_blank"
             rel="noreferrer"
           >
-            writing, recording and playing music
+            music
           </a>
-          , starting (but rarely finishing) videogames, losing to my wife at
-          cards and spending time with friends and family.
+          , starting (but rarely finishing){" "}
+          <a
+            href="https://steamcommunity.com/id/alphapentagon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            videogames
+          </a>
+          , losing to my wife at cards and spending time with friends and
+          family.
         </p>
         <p>
           I also enjoy attending gigs and music festivals and I am passionate
           about wellbeing and mental health.
         </p>
         <p id="top-link">
-          Back to <a href="#top">top</a>
+          <a href="#top">Back to top</a>
         </p>
       </article>
     </section>

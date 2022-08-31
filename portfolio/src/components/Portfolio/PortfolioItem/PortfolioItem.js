@@ -1,7 +1,15 @@
 import { useState } from "react";
 import "./PortfolioItem.css";
 
-export const PortfolioItem = ({ heading, text, links, more, description }) => {
+export const PortfolioItem = ({
+  heading,
+  text,
+  links,
+  more,
+  description,
+  img_url,
+  alt_text,
+}) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -27,7 +35,9 @@ export const PortfolioItem = ({ heading, text, links, more, description }) => {
           })}
         </ul>
       </div>
-      <div className="portfolio-item-img" />
+
+      <img className="portfolio-item-img" src={img_url} alt={alt_text} />
+
       <div className="portfolio-item-text">
         <p>{description}</p>
         <p>{text}</p>
