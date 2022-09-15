@@ -3,8 +3,8 @@ export const groupPortfolioItems = [
     heading: "Wellbeing Toolkit",
     description:
       "App to assist fellow bootcampers with managing their wellbeing.",
-    text: `Team project created in React with a node.js/express backend serving as a RESTful API, querying a PostgreSQL database.`,
-    more: "For our week 9 project we were put into random teams of 4/5 people and tasked with creating a fullstack app to assist bootcampers at the School of Code - in only 4 days! We created a 'Wellbeing Toolkit' with a carousel of mindset resources, a wellbeing feedback form and a toggle to turn the calming sound of the ocean on/off.  We created a React frontend and an express backend serving as a RESTful API, querying a postgreSQL database.",
+    text: `1 week mid-course team project created in React with a node.js/express backend serving as a RESTful API, querying a PostgreSQL database.`,
+    more: "<p>Tasked with creating a <strong>fullstack app</strong> to assist fellow bootcampers. We created a 'Wellbeing Toolkit' with a carousel of mindset resources and a wellbeing feedback form. We utilisied a <strong>React frontend</strong> and an <strong>express backend</strong> serving as a <strong>RESTful API</strong>, querying a <strong>postgreSQL database</strong>.</p><br /><p>I worked across the stack but was <strong>instrumental</strong> in the setup of the <strong>backend routes and models</strong> and using <strong>Jest to unit test our API</strong> functionality.</p>",
     links: [
       { text: "demo", url: "https://soc-wellbeing-toolkit.netlify.app" },
       {
@@ -18,8 +18,8 @@ export const groupPortfolioItems = [
   {
     heading: "SkillEx",
     description: "Free skill sharing app which connects teachers and learners.",
-    text: "Team project built in Next.js for both frontend and backend, using Auth0 for authentication and employing Prisma to query a PostgreSQL database.",
-    more: "Team project built in Next.js",
+    text: "4 week final course team project built in Next.js for both frontend and backend, using Auth0 for authentication and employing Prisma to query a PostgreSQL database.",
+    more: "<p>Tasked with creating a <strong>solution</strong> to a <strong>real life problem</strong>, we addressed the issue of expensive and inaccessible education and created a free skill sharing app to connect teachers and learners. We used <strong>Next.js</strong> as our <strong>frontend and backend framework</strong>, taking advantage of inbuilt features such as <strong>dynamic page routing, serverside rendering and the inbuilt API</strong>.</p><br /><p>I worked across the stack but I am <strong>especially proud</strong> of my work with <strong>integrating and troubleshooting Prisma</strong>, which we used to overcome a blocker of connecting to our database.</p>",
     links: [
       { text: "demo", url: "https://skill-ex.vercel.app/" },
       {

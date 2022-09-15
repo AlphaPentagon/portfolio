@@ -1,4 +1,5 @@
 import { useState } from "react";
+import parse from "html-react-parser";
 import "./PortfolioItem.css";
 
 export const PortfolioItem = ({
@@ -52,7 +53,7 @@ export const PortfolioItem = ({
       >
         {clicked ? (
           <div className="more-container fade-in">
-            <p className="more-text">{more}</p>
+            <div className="more-text">{parse(more)}</div>
             <div className="close-button" onClick={handleClick}>
               <p>&#8744;</p>
             </div>

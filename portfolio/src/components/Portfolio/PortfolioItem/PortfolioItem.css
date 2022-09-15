@@ -1,3 +1,11 @@
+.portfolio-item-container {
+  height: 25rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
 .portfolio-item-text {
   display: flex;
   flex-direction: column;
