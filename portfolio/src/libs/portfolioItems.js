@@ -34,6 +34,19 @@ export const groupPortfolioItems = [
 
 export const soloPortfolioItems = [
   {
+    heading: "Thought Diary",
+    description:
+      "A fullstack Thought Diary app for people to log and view their thoughts.",
+    text: "A React frontend using Bootstrap for styling, with an Express backend and a MongoDB database.",
+    more: "<p>I really enjoyed this challenge and the subject matter (mental health) is something I am <strong>passionate</strong> about.  I had never used <strong>Bootstrap</strong> or <strong>MongoDB</strong> before, so it pushed me out of my comfort zone and allowed me to explore new tech.</p><br /><p>Specific <strong>challenges</strong> I overcame were: creating a <strong>multistep form</strong> (achieved using the useState() hook), communicating with my DB from the <strong>deployed backend</strong> (solved by adding the apps IP addresses to the allowed list in MongoDB) and <strong>customising Bootstrap</strong> (achieved by using a custom <strong>SASS</strong> file and CSS classes).</p>",
+    links: [
+      { text: "demo", url: "https://thought-diary.netlify.app/" },
+      { text: "code", url: "https://github.com/AlphaPentagon/thought_diary" },
+    ],
+    img_url: "/images/thought_diary.png",
+    alt_text: "",
+  },
+  {
     heading: "Portfolio website",
     description:
       "This portfolio website, to showcase myself and my coding journey.",
