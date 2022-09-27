@@ -47,6 +47,25 @@ export const soloPortfolioItems = [
     alt_text: "",
   },
   {
+    heading: "Fantasy Memory Game",
+    description:
+      "A fantasy themed memory game built with React, Typescript and Styled Components.",
+    text: "Built over a few days as a challenge to myself to learn Typescript and create a game from scratch without the use of tutorials.",
+    more: "<p>I found the transition from <strong>Javascript to Typescript</strong> a bit challenging at first, but eventually found my feet after <strong>reading the docs</strong> and enjoyed the benefits of having to deal with less bugs in my code.</p><br/><p>It was also my first time using <strong>Styled Components</strong> and I really enjoyed using them. Inititally I thought having my styling located within my JS file would be messy, but actually I found it very <strong>readable and neat</strong>.  I especially liked being able to use <strong>props for dynamic styling</strong>.</p>  ",
+    links: [
+      {
+        text: "demo",
+        url: "https://fantasy-memory-game.netlify.app/",
+      },
+      {
+        text: "code",
+        url: "https://github.com/AlphaPentagon/memory_game",
+      },
+    ],
+    img_url: "/images/memory_game.png",
+    alt_text: "",
+  },
+  {
     heading: "Portfolio website",
     description:
       "This portfolio website, to showcase myself and my coding journey.",
@@ -56,28 +75,6 @@ export const soloPortfolioItems = [
       { text: "code", url: "https://github.com/AlphaPentagon/portfolio" },
     ],
     img_url: "/images/portfolio_site.png",
-    alt_text: "",
-  },
-  {
-    heading: "Breakout Game Tutorial",
-    description: "Tutorial project to create a breakout style game in JS",
-    text: "I added additional features and refactored code where appropriate.  I learnt how to draw and animate using the canvas api and how to implement basic movement, collision, and game win/lose logic.",
-    more: "I additionally added sound effects and background music to the game.",
-    links: [
-      {
-        text: "demo",
-        url: "https://alphapentagon.github.io/breakout_game_tutorial/",
-      },
-      {
-        text: "code",
-        url: "https://github.com/AlphaPentagon/breakout_game_tutorial",
-      },
-      {
-        text: "tutorial",
-        url: "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript",
-      },
-    ],
-    img_url: "/images/breakout_game.png",
     alt_text: "",
   },
 ];
